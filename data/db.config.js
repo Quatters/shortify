@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const DB_URI = process.env.MONGODB_URI + '/shortify' || 'mongodb://localhost:27017/shortify';
+const DB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/shortify';
 
 mongoose.connect(DB_URI, {
   useNewUrlParser: true,
