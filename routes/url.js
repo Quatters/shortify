@@ -5,8 +5,7 @@ const validUrl = require('valid-url');
 const router = express.Router();
 const Url = require('../data/models/url');
 
-// TODO: менять в зависимости от process.env
-const baseUrl = 'http://localhost:8888';
+const baseUrl = process.env.BASE_URL || 'http://localhost:8888';
 
 router.post('/shortify', async (req, res) => {
   const longUrl = req.body.longUrl;
