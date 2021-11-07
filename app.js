@@ -9,5 +9,6 @@ connection.on('erorr', () => console.log('Database connection error.'));
 app.use(express.json());
 app.use('/api/url', require('./routes/url'));
 app.use('/', require('./routes/redirect'));
+app.use('/', require('./routes/home'));
 
 app.listen(PORT, () => console.log(`Listening ${PORT} port.\nRunning locally? Check http://localhost:8888.\n`));
