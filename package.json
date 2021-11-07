@@ -1,5 +1,5 @@
 {
-  "name": "shorify",
+  "name": "shortify",
   "version": "1.0.0",
   "description": "An API that generates redirection links to any URL in WWW.",
   "main": "app.js",
