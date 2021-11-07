@@ -1,0 +1,20 @@
+{
+  "name": "shorify",
+  "version": "1.0.0",
+  "description": "An API that generates redirection links to any URL in WWW.",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "author": "Quatters",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "short-id": "^0.1.0-1",
+    "valid-url": "^1.0.9"
+  },
+  "engines": {
+    "node": "14.17.x"
+  }
+}
