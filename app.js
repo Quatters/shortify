@@ -7,7 +7,7 @@ connection.once('open', () => console.log('Database connected successfuly.\n'));
 connection.on('erorr', () => console.log('Database connection error.'));
 
 app.use(express.json());
-app.use('/api/url', require('./routes/url'));
+app.use('/api/', require('./routes/url'));
 app.use('/', require('./routes/redirect'));
 app.use('/', require('./routes/home'));
 
