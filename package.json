@@ -4,7 +4,7 @@
   "description": "An API that generates redirection links to any URL in WWW.",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "debug": "nodemon app.js"
   },
   "author": "Quatters",
   "license": "ISC",
