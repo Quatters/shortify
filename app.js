@@ -4,7 +4,7 @@ const app = express();
 
 const connection = require('./data/db.config');
 connection.once('open', () => console.log('Database connected successfuly.\n'));
-connection.on('erorr', () => console.log('Database connection error.'));
+connection.on('error', () => console.log('Database connection error.'));
 
 app.use(express.json());
 app.use('/api/', require('./routes/url'));
