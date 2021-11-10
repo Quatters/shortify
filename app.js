@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 const connection = require('./data/db.config');
-connection.once('open', () => console.log('Database connected successfuly.\n'));
+connection.once('open', () => console.log('Database connected successfully.\n'));
 connection.on('error', () => console.log('Database connection error.'));
 
 app.use(express.json());
